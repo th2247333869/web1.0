@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <link rel="stylesheet" href="css/center.css">
+
+    <!--[if lt IE 9+]>
+
+    <![endif]-->
+  </head>
+  <body>
+    <div class="menu-left">
+      <!-- <div class="tool-bar" style="background-color: lightgrey;">1</div>
+      <div class="tool-bar" style="background-color: lightblue;">2</div>
+      <div class="tool-bar" style="background-color: lightgreen;">3</div>
+      <div class="tool-bar" style="background-color: lightsalmon;">4</div>
+      <div class="tool-bar" style="background-color: pink;">5</div>
+      <div class="tool-bar" style="background-color: lightpink;">6</div> -->
+    </div>
+    <div class="menu-right">
+      <div class="div-horizontal fullcalendar" >
+              <!--展示当前日期和待办 逻辑：-->
+              <!-- <object style="border:0px" type="text/x-scriptlet" data="fullcalendar/index.html" width=100% height=100%></object>
+               -->
+        <div class="panel-title">
+          &nbsp;&nbsp;&nbsp;面板:&nbsp;&nbsp;&nbsp;<span>2019-06-29</span>
+          <img style="width: 15px;" src="image/icon_reflesh.png" title="刷新">
+        </div>
+        <div class="panel-body" onclick="openFullCalenDar(this)">
+          <ul id="scroll">
+            <li><a><span class="projects">项目计划(待办):</span>  <span class="name">张毅</span>    <span class="time">27/2/2015 12:34 AM</span></a></li>
+            <li><a><span class="projects">项目计划(待办):</span>  <span class="name">王松林</span>  <span class="time">27/2/2015 12:34 AM</span></a></li>
+            <li><span class="projects">项目计划(待办):</span>  <span class="name">张善地</span>  <span class="time">27/2/2015 12:34 AM</span></li>
+            <li><span class="projects">项目计划(待办):</span>  <span class="name">李宏伟</span>  <span class="time">27/2/2015 12:34 AM</span></li>
+            <li><span class="projects">项目计划(待办):</span>  <span class="name">李宏伟</span>  <span class="time">27/2/2015 12:34 AM</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="div-horizontal tool">
+				<div class="panel-title tool-title">
+				  &nbsp;&nbsp;&nbsp;面板:&nbsp;&nbsp;&nbsp;<span>工具箱</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				  <img style="width: 15px;" src="image/icon_set.png" title="设置">
+				</div>
+				<div class="panel-body tool-menu">
+					<div class="toolitem"><img src="image/icon_gjx.png" /></div>
+					<div class="toolitem"><img src="image/icon_gjx.png" /></div>
+					<div class="toolitem"><img src="image/icon_gjx.png" /></div>
+					<div class="toolitem"><img src="image/icon_gjx.png" /></div>
+					<div class="toolitem" style="border: 0px solid;"><img src="image/icon_add.png" /></div>
+					
+				</div>
+			</div>
+      <div class="div-horizontal clear" style="background: gray;"></div>
+    </div>
+
+
+  <script src="js/jquery-3.0.0.js"></script>
+  <script src="json/layout.json"></script>
+  <script src="js/layout.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){ 
+      setLayout(9);//传参仅支持 4 9 16 
+    });
+
+    function openFullCalenDar(obj) {
+      // body...
+     //iframe窗
+      window.parent.openIframe("fullcalendar/index.html",'日期待办');
+     
+    }
+  </script>
+  
+
+  </body>
+</html>

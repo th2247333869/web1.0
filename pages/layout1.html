@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+
+    <!--[if lt IE 9+]>
+
+    <![endif]-->
+  </head>
+  <body >
+	<div style="width:100%;height: 100%;;" onclick="openIframe('pages/layout1.html','baidu')">layout-1</div>
+  <script src="js/scripts.min.js"></script>
+  <script src="js/main.min.js"></script>
+  <script src="js/custom.js"></script>
+	<script>
+		//可以提到公共js里
+		function openIframe(url,title){
+			window.parent.parent.openIframe(url,title);
+		}
+	</script>
+  </body>
+</html>
